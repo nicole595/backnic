@@ -1,0 +1,18 @@
+### Registro do usuário
+POST https://adonis-2hv5.onrender.com/register HTTP/1.1
+Content-Type: application/json  
+
+{
+    "name": "Nicole",
+    "email": "nicoletp16@gmail.com",
+    "password": "1234"
+}
+
+### Autenticação do usuário
+POST https://adonis-2hv5.onrender.com/login HTTP/1.1
+Content-Type: application/json  
+
+{
+    "email": "nicoletp16@gmail.com",
+    "password": "1234"
+}
