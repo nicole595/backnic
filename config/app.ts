@@ -7,11 +7,11 @@
 
 import proxyAddr from 'proxy-addr'
 import Env from '@ioc:Adonis/Core/Env'
-import axios from 'axios'
 import type { ServerConfig } from '@ioc:Adonis/Core/Server'
 import type { LoggerConfig } from '@ioc:Adonis/Core/Logger'
 import type { ProfilerConfig } from '@ioc:Adonis/Core/Profiler'
 import type { ValidatorConfig } from '@ioc:Adonis/Core/Validator'
+import axios from 'axios'
 
 /*
 |--------------------------------------------------------------------------
@@ -234,6 +234,7 @@ export const profiler: ProfilerConfig = {
 */
 export const validator: ValidatorConfig = {
 }
+
 export const apiAxios = axios.create({
   baseURL: Env.get('API_URL')
 })
